@@ -12,7 +12,6 @@ def ask():
         x = re.sub("Embed$", "", song)
         x = re.sub("[0-9]Embed$", "", x)
         x = re.sub("[0-9]$", "", x)
-        print("\n")
         print(x)
     except:
         None
