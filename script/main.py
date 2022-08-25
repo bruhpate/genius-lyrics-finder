@@ -1,6 +1,7 @@
 from lyricsgenius import Genius
 import re
 
+#IMPORTANT, INSTALL GENIUS MODULE FOR USE IT --> pip install lyricsgenius
 
 #replace the value of this variable with your genius token, or generate one --> https://genius.com/api-clients
 yourToken = "*replace with your token*"
