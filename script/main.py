@@ -1,8 +1,12 @@
 from lyricsgenius import Genius
 import re
+
+
+#replace the value of this variable with your genius token, or generate one --> https://genius.com/api-clients
 yourToken = "*replace with your token*"
-genius = Genius("yourtoken")
+genius = Genius(yourToken)
 def ask():
+    print("Search the song: ")
     try:
         song = genius.lyrics(genius.search_song(input()).id, None, False)
         x = re.sub("Embed$", "", song)
