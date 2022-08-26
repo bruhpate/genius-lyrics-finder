@@ -10,8 +10,8 @@ def ask():
     try:
         song = genius.lyrics(genius.search_song(input()).id, None, False)
         x = re.sub("Embed$", "", song)
-        x = re.sub("[0-9]Embed$", "", x)
-        x = re.sub("[0-9]$", "", x)
+        for i in range(0, 5):
+            x = re.sub("[0-9]$", "", x)
         print(x)
     except:
         None
