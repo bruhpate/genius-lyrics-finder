@@ -23,14 +23,11 @@ def removeN(x):
 
 
 def main():
-    try:
-        y = sys.argv[1]
+    if len(sys.argv) == 2:
         ask()
-    except:
+    else:
         print("Usage: lyrics [\"title and artist\"]")
-        exit
-
-
+        
 if __name__ == "__main__":
     main()          
 
